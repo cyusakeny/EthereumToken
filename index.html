@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My ERC20 Token Interface</title>
+</head>
+<body>
+  <h2>My ERC20 Token Interface</h2>
+  <button onclick="connectWallet()">Connect Wallet</button>
+
+  <p><strong>Your Address:</strong> <span id="walletAddress">Not connected</span></p>
+  <p><strong>Your Token Balance:</strong> <span id="tokenBalance">0</span></p>
+
+  <hr>
+  <h3>Transfer Tokens</h3>
+  <p>
+    <input type="text" id="recipient" placeholder="Recipient Address"><br><br>
+    <input type="number" id="amount" placeholder="Amount"><br><br>
+    <button onclick="transferTokens()">Send Tokens</button>
+  </p>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
